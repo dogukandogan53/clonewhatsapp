@@ -1,6 +1,4 @@
-@media only screen and (max-width : 1439px){
-    .header {width: 100%;} 
-}
+
 
 body{
     background-image: url(background.jpeg);
@@ -25,4 +23,10 @@ body{
 .friend-menu {
     width: 60%;
     background-color: blue;
+}
+
+@media only screen and (max-width : 1439px){
+    .header {width: 100%; margin: auto;}
+    .user-menu {background-color: yellowgreen; width: 40%;}
+    .friend-menu {background-color: yellow; width: 60%;} 
 }
