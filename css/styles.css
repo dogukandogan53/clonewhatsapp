@@ -1,0 +1,108 @@
+/*********
+Basic Grid
+
+*********/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Segoe UI", "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*******
+Degiskenler
+*******/
+:root {
+    --background-green: #009688;
+    --background-beige: #d7dbd6;
+    --sidebar-header: #ededed;
+    --notifications-text-color: rgba(48, 48, 48, 0.96);
+    --notifications-link-color: rgba(48, 48, 48, 0.85);
+    --notifications-background-color: #9de1fe;
+    --search-bar-bg: #f6f6f6;
+    --white: #ffffff;
+    --text-gray: #919191;
+    --chat-border: #ededed;
+    --whatsapp-green: #3ccc2f;
+    --scrollbar-color: #cccccc;
+    --chat-window-scrollbar-color: #bab3ae;
+    --box-shadow-color: #d5d5d5;
+    --chat-hover-color: #f5f5f5;
+    --chat-active-color: #ebebeb;
+    --char-window-biege: #e5ddd5;
+    --sender-message-green: #dcf8c6;
+    --type-message-bar: #f0f0f0; 
+}
+
+/*********
+Main Grid
+
+*********/
+
+.grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 12.8rem 1fr;
+}
+
+/*********
+App Background
+
+*********/
+
+.top {
+    background: var(--background-green);
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.bottom {
+    background: var(--backround-beige);
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+}
+
+/*********
+APP
+
+*********/
+
+.app {
+    display: grid;
+    grid-template-columns: 42rem 1fr;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 139.6rem;
+    margin: 2rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+/*********
+Sidebar
+
+*********/
+
+.sidebar {
+    grid-column: 1 / 2;
+    background: var(--white);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
